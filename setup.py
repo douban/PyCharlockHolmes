@@ -1,7 +1,7 @@
 from distutils.core import setup, Extension
 import os
 
-os.system('cd ./lib; ./build.sh')
+# os.system('cd ./lib; ./build.sh')
 
 ch_exts = [os.path.join('src', name) for name in os.listdir('src')
            if name.endswith('.c')]
