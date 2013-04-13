@@ -4,8 +4,7 @@ import os
 ch_exts = [os.path.join('src', name) for name in os.listdir('src')
            if name.endswith('.c')]
 
-ch_module = Extension('charlockholmes',
-                      ch_exts)
+ch_module = Extension('charlockholmes', ch_exts, libraries=['icui18n', 'magic'])
 
 setup (name = 'charlockholmes',
        version = '1.0',
