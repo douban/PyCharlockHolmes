@@ -10,11 +10,13 @@ charlockholmes_init_encodec()
 {
     UErrorCode status = U_ZERO_ERROR;
 
-    ch_magic = magic_open(MAGIC_NO_CHECK_SOFT);
+    // ch_magic = magic_open(MAGIC_NO_CHECK_SOFT);
+    ch_magic = magic_open(0);
     if (ch_magic == NULL) {
         PyErr_SetString(PyExc_StandardError, magic_error(ch_magic));
         return -1;
     }
+    magic_load(ch_magic, NULL);
 
     ch_ucd = ucsdet_open(&status);
     if (U_FAILURE(status)) {
