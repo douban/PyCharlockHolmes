@@ -1,1 +1,4 @@
+include src/*.c
+include src/*.h
 include test/file/*
+include README.md
