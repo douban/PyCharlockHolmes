@@ -10,6 +10,12 @@ Character encoding detecting library for Python using [ICU](http://site.icu-proj
     emerge -av dev-libs/icu
     emerge -av sys-apps/file
 
+### Brew
+    brew install icu4c
+    brew install libmagic
+    export ICUI18N="/usr/local/Cellar/icu4c/xx" # Replace "xx" as the version of your icu
+    export MAGIC="/usr/local/Cellur/libmagic/xx" # Replace "xx" as the version of your libmagic
+
 ## Install
 
     python setup build
