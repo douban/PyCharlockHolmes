@@ -10,6 +10,10 @@ Gentoo
 emerge -av dev-libs/icu
 emerge -av sys-apps/file
 
+Ubuntu
+apt-get install libmagic-dev
+apt-get install libicu-dev
+
 Install
 
 python setup build
