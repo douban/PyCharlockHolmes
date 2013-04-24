@@ -19,7 +19,7 @@ Character encoding detecting library for Python using [ICU](http://site.icu-proj
     brew install icu4c
     brew install libmagic
     export ICUI18N="/usr/local/Cellar/icu4c/xx" # Replace "xx" as the version of your icu
-    export MAGIC="/usr/local/Cellur/libmagic/xx" # Replace "xx" as the version of your libmagic
+    export MAGIC="/usr/local/Cellar/libmagic/xx" # Replace "xx" as the version of your libmagic
 
 ## Install
 
