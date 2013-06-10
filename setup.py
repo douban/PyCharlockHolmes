@@ -33,12 +33,12 @@ ch_module = Extension('charlockholmes',
 
 setup (
     name='charlockholmes',
-    version='0.0.1',
+    version='0.0.2',
     description='Character encoding detecting library for Python using ICU and libmagic.',
     url='https://github.com/xtao/PyCharlockHolmes',
     ext_modules=[ch_module],
     keywords=('icu', 'magic', 'charlockholmes', 'egg'),
-    license='BSD License',
+    license='Modified BSD License',
     author='xtao',
     author_email='xutao881001@gmail.com',
 )
