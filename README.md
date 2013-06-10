@@ -32,3 +32,6 @@ Character encoding detecting library for Python using [ICU](http://site.icu-proj
     file = open('test.txt')
     content = file.read()
     print detect(content)
+
+# License
+Modified BSD License
