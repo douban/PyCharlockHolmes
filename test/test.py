@@ -47,9 +47,9 @@ TEST_FILES = {
 for test in TEST_FILES:
     file_path = TEST_FILES[test][0]
     file_result = TEST_FILES[test][1]
-    content = open(file_path).read()
+    content = open(file_path, "rb").read()
     test_result = detect(content)
     if test_result == file_result:
-        print file_path + ": OK"
+        print(file_path + ": OK")
     else:
-        print file_path + ": ERROR"
+        print(file_path + ": ERROR")
