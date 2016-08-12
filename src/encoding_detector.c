@@ -1,12 +1,19 @@
 #include "Python.h"
 #include "unicode/ucsdet.h"
 #include "magic.h"
+#include "charlockholmes.h"
+
+#if PY_MAJOR_VERSION >= 3
+#define PyExc_StandardError PyExc_Exception
+#define PyString_AsString PyBytes_AsString
+#define PyString_Size PyBytes_Size
+#endif
 
 static magic_t ch_magic;
 static UCharsetDetector *ch_ucd;
 
 int
-charlockholmes_init_encodec()
+charlockholmes_init_encodec(void)
 {
     UErrorCode status = U_ZERO_ERROR;
 
