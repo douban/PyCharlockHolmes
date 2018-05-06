@@ -1,5 +1,5 @@
 # Charlock Holmes
-[![Build Status](https://travis-ci.org/xtao/PyCharlockHolmes.png)](https://travis-ci.org/xtao/PyCharlockHolmes)
+[![Build Status](https://travis-ci.org/douban/PyCharlockHolmes.png)](https://travis-ci.org/douban/PyCharlockHolmes)
 
 Character encoding detecting library for Python using [ICU](http://site.icu-project.org/) and libmagic. Inspired by [Charlock Holmes](https://github.com/brianmario/charlock_holmes)
 
@@ -32,6 +32,10 @@ Character encoding detecting library for Python using [ICU](http://site.icu-proj
     file = open('test.txt')
     content = file.read()
     print detect(content)
+
+# CHANGELOG
+- 0.0.3
+ - Add support for python 3.X
 
 # License
 Modified BSD License
