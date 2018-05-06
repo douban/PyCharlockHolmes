@@ -35,7 +35,7 @@ Character encoding detecting library for Python using [ICU](http://site.icu-proj
 
 # CHANGELOG
 - 0.0.3
- - Add support for python 3.X
+    - Add support for python 3.X
 
 # License
 Modified BSD License
